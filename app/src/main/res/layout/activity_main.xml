@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/star">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:contentDescription="App Logo"
+            android:scaleType="centerInside"
+            android:src="@drawable/astronaut" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold|italic"
+            android:textColor="#C0C0C0" />
+
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="text"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext_border" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold|italic"
+            android:textColor="#C0C0C0"/>
+
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext_border" />
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Unlock Secrets!"
+            android:textStyle="bold|italic"
+            android:textColor="#FFD700"
+            android:layout_marginTop="24dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textStyle="bold|italic"
+            android:textColor="#C0C0C0"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
